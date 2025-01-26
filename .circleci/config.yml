@@ -1,0 +1,21 @@
+---
+version: 2.1
+
+jobs:
+  test:
+    working_directory: /tmp/project
+    docker:
+    - image: node:14-alpine
+    steps:
+    - checkout
+    - run:
+        name: install dependencies
+        command: npm install
+    - run:
+        name: lint source and spec
+        command: ./node_modules/.bin/eslint lib spec || true
+
+workflows:
+  execute_tests:
+    jobs:
+    - test

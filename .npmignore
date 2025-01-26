@@ -1,0 +1,8 @@
+node_modules
+.gitignore
+spec
+linter_helm.png
+.git
+.circleci
+.github
+package-lock.json

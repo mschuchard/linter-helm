@@ -1,0 +1,59 @@
+{
+  "name": "linter-helm",
+  "main": "./lib/main.js",
+  "version": "1.0.0",
+  "description": "Chart lint via helm lint",
+  "repository": "https://github.com/mschuchard/linter-helm",
+  "license": "MIT",
+  "keywords": [
+    "lint",
+    "linter",
+    "kubernetes",
+    "helm"
+  ],
+  "scripts": {
+    "test": "pulsar --test spec"
+  },
+  "bugs": {
+    "url": "https://github.com/mschuchard/linter-helm/issues"
+  },
+  "engines": {
+    "pulsar": ">=1.0.0"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "atom-linter": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-plugin-import": "latest"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "pulsar"
+          ]
+        }
+      ]
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "globals": {
+      "pulsar": false
+    }
+  }
+}
