@@ -5,7 +5,6 @@
 ### 1.0.1 (Next)
 - Lint if current directory contains a `Chart.yaml`.
 
-- linter helm spec error_info error_warning
 - filename capture for error_info error is overly greedy
 
 ### 1.0.0
