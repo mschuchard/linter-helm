@@ -79,7 +79,7 @@ describe('The Helm provider for Linter', () => {
           expect(messages[2].excerpt).toBeDefined();
           expect(messages[2].excerpt).toEqual('executing "error_info/templates/deployment.yaml" at <include "errors_warnings.fullname" .>: error calling include: template: no template "errors_warnings.fullname" associated with template "gotpl"');
           expect(messages[2].location.file).toBeDefined();
-          expect(messages[2].location.file).toMatch(/.+deployment\.yaml$/);
+          expect(messages[2].location.file).toMatch(/.+templates\/deployment\.yaml$/);
           expect(messages[2].location.position).toBeDefined();
           expect(messages[2].location.position).toEqual([[3, 10], [3, 11]]);
         });
@@ -114,7 +114,7 @@ describe('The Helm provider for Linter', () => {
           expect(messages[0].excerpt).toBeDefined();
           expect(messages[0].excerpt).toEqual("object name does not conform to Kubernetes naming requirements: \"invalid_name_format\": metadata.name: Invalid value: \"invalid_name_format\": a lowercase RFC 1123 subdomain must consist of lower case alphanumeric characters, '-' or '.', and must start and end with an alphanumeric character (e.g. 'example.com', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*')");
           expect(messages[0].location.file).toBeDefined();
-          expect(messages[0].location.file).toMatch(/.+deployment\.yaml$/);
+          expect(messages[0].location.file).toMatch(/.+templates\/deployment\.yaml$/);
           expect(messages[0].location.position).toBeDefined();
           expect(messages[0].location.position).toEqual([[0, 0], [0, 1]]);
           expect(messages[1].severity).toBeDefined();
@@ -122,7 +122,7 @@ describe('The Helm provider for Linter', () => {
           expect(messages[1].excerpt).toBeDefined();
           expect(messages[1].excerpt).toEqual('a Deployment must contain matchLabels or matchExpressions, and "invalid_name_format" does not');
           expect(messages[1].location.file).toBeDefined();
-          expect(messages[1].location.file).toMatch(/.+deployment\.yaml$/);
+          expect(messages[1].location.file).toMatch(/.+templates\/deployment\.yaml$/);
           expect(messages[1].location.position).toBeDefined();
           expect(messages[1].location.position).toEqual([[0, 0], [0, 1]]);
         });

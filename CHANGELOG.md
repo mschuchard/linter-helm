@@ -4,8 +4,7 @@
 
 ### 1.0.1 (Next)
 - Lint if current directory contains a `Chart.yaml`.
-
-- filename capture for error_info error is overly greedy
+- Improve message parsing and capture.
 
 ### 1.0.0
 - Initial version ready for wide usage.
