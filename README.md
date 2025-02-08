@@ -9,5 +9,5 @@ The Helm binary executable at a minimum version of 3.0 is required to be install
 All testing is performed with the latest stable version of Pulsar. Any version of Atom or any pre-release version of Pulsar is not supported.
 
 ### Usage
-- This linter will trigger if and only if the current file is named `Chart.yaml`. The assumption is that this file indicates the current project and directory is a Helm chart. This will cause the entire project/directory to be linted, and the resulting information to be displayed accordingly.
+- This linter will trigger if and only if the current file uses Language YAML, and if and only if the current directory contains a file named `Chart.yaml`. The assumption is that this file indicates the current project and/or directory is a Helm chart. This will cause the entire project/directory to be linted, and the resulting information to be displayed accordingly.
 - To quickly and easily access the issues in other files, you will need to change the settings inside Linter-UI-Default. For `Panel Represents` and/or `Statusbar Represents`, you will need to change their options to `Entire Project`. This will allow you to use either display to quickly access issues in other files by clicking on the displayed information.
