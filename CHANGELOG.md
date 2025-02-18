@@ -1,5 +1,6 @@
 ### 1.0.2 (Next)
 - Lint if current project contains `Chart.yaml` at top level.
+- Fix `Chart.yaml` file existence checks.
 
 - flag and args in config options
 - regexp still captures helm chart name for error_info error message
