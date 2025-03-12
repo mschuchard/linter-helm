@@ -3,7 +3,6 @@
 - Fix `Chart.yaml` file existence checks.
 
 - flag and args in config options
-- regexp still captures helm chart name for error_info error message
 
 ### 1.0.1
 - Lint if current directory contains a `Chart.yaml`.

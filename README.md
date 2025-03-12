@@ -10,4 +10,5 @@ All testing is performed with the latest stable version of Pulsar. Any version o
 
 ### Usage
 - This linter will trigger if and only if the current file uses Language YAML, and if and only if the current directory contains a file named `Chart.yaml`. The assumption is that this file indicates the current project and/or directory is a Helm chart. This will cause the entire project/directory to be linted, and the resulting information to be displayed accordingly.
+- Note that in rare instances `helm lint` displays the wrong filename containing the issue. In these situation the displayed filename may be correct, but the path to it (and editor link) will be incorrect.
 - To quickly and easily access the issues in other files, you will need to change the settings inside Linter-UI-Default. For `Panel Represents` and/or `Statusbar Represents`, you will need to change their options to `Entire Project`. This will allow you to use either display to quickly access issues in other files by clicking on the displayed information.
