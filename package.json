@@ -53,7 +53,7 @@
       "node": true
     },
     "globals": {
-      "pulsar": false
+      "atom": true
     }
   }
 }
