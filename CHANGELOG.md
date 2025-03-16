@@ -1,4 +1,4 @@
-### 1.0.2 (Next)
+### 1.0.2
 - Lint if current project contains `Chart.yaml` at top level.
 - Fix `Chart.yaml` file existence checks.
 
