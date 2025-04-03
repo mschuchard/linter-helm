@@ -1,5 +1,6 @@
 ### 1.1.0 (Next)
 - Add config option to ignore information level messages.
+- Add config option to lin dependent charts.
 
 ### 1.0.2
 - Lint if current project contains `Chart.yaml` at top level.
