@@ -1,4 +1,4 @@
-### 1.1.0 (Next)
+### 1.1.0
 - Add config option to ignore information level messages.
 - Add config option to lint dependent charts.
 - Add config option to treat warnings as errors.
