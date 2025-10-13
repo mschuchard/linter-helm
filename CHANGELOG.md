@@ -1,3 +1,6 @@
+### 1.1.1 (Next)
+- Improve package activation.
+
 ### 1.1.0
 - Add config option to ignore information level messages.
 - Add config option to lint dependent charts.
