@@ -1,5 +1,6 @@
 ### 1.1.1 (Next)
 - Improve package activation.
+- Fix Helm version detection.
 
 ### 1.1.0
 - Add config option to ignore information level messages.

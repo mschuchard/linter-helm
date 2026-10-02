@@ -15,13 +15,14 @@ describe('The Helm provider for Linter', () => {
     });
   });
 
-  it('immediately returns from a yaml file not within a helm chart', (done) => {
+  it('immediately returns from a yaml file not within a helm chart', () => {
     const otherFile = path.join(__dirname, 'fixtures/not_helm', 'foo.yaml');
-    return atom.workspace.open(otherFile).then(editor =>
-      lint(editor).then(messages => {
-      }, () => {
-        done();
-      })
+    waitsForPromise(() =>
+      atom.workspace.open(otherFile).then(editor =>
+        lint(editor).then(messages => {
+          expect(messages).toEqual([]);
+        })
+      )
     );
   });
 
